@@ -1,14 +1,15 @@
-import { Router, Routes, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+
+// Template
+import PageTemplate from '../templates/pageTemplate/PageTemplate'
 
 // Pages
 import Home from '../pages/home/Home'
 
-console.log(Home)
-
 const AppRouter = () => 
     <Router>
         <Routes>
-            <Route exact path="/" element={<Home />}/>
+            <Route path="/" element={<PageTemplate component={<Home />} />} />
         </Routes>
     </Router>
 
