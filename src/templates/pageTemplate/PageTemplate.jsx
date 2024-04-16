@@ -10,9 +10,9 @@ const PageTemplate = ({ component }) => {
 
             <Navbar className="PageTemplate_Navbar" />
 
-            {
-                component
-            }
+            <div className="PageTemplate_Content">
+                {component}
+            </div>
         </div>
     )
 }
